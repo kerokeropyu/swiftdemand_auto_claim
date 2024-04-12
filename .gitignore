@@ -1,0 +1,10 @@
+# Environment [virtual：venv]
+venv/
+logs/
+config.json
+# Environment [VisualStudioCode]
+.vscode/
+
+# Environment [Program]
+*.spec
+__pycache__
