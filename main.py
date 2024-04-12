@@ -1,11 +1,12 @@
 import datetime
-import logging
 import json
+import logging
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-import time
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 実行時のバージョンと同様の ChromeDriverをインストール
@@ -49,6 +50,8 @@ def main():
         logger.warning('Claim button is not found.')
     # ログアウト
     driver.find_element(By.XPATH, '//*[@id="header"]/div/div/a[2]/div').click()
+    # ブラウザを閉じる
+    driver.quit()
     logger.info('Input completed!')
 
 if __name__ == '__main__':

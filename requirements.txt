@@ -3,3 +3,4 @@ bandit
 logging
 selenium==4.19
 webdriver-manager==4.0.1
+isort
