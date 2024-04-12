@@ -44,8 +44,9 @@
 
 ## 備考
 * ロギングの使い方: [Python 公式ドキュメント - ロギングの詳細](https://docs.python.org/ja/3/howto/logging.html#advanced-logging-tutorial)
-* banditの使い方:
+* bandit（静的セキュリティー検査ツール）の使い方:
     ```bash
     bandit main.py
     ```
+    * banditについての詳細は [こちらの資料](https://scrapbox.io/PythonOsaka/Python%E3%81%AE%E9%9D%99%E7%9A%84%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%BC%E6%A4%9C%E6%9F%BB%E3%83%84%E3%83%BC%E3%83%ABbandit%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86) を参照してください。
 * README.mdの書き方は下記のサイトを参照しました（自分用メモ）: [Markdown記法 サンプル集](https://gist.github.com/mignonstyle/083c9e1651d7734f84c99b8cf49d57fa)
