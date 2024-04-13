@@ -20,11 +20,6 @@
     pip install -r requirements.txt
     ```  
 
-4. #### 仮想環境の終了
-    ```コマンドプロンプト
-    deactivate
-    ``` 
-
 ## 使い方
 1. `config.json` ファイルを作成し、ユーザーのIDとパスワードを設定します。
     ```json
@@ -40,7 +35,12 @@
     python main.py
     ```
 
-3. ログイン、クリック、ログアウトが自動で行われます。必要に応じて、cron などで定期実行することで、より便利に使えます。
+3. 仮想環境の終了
+    ```コマンドプロンプト
+    deactivate
+    ``` 
+
+4. ログイン、クリック、ログアウトが自動で行われます。必要に応じて、cron などで定期実行することで、より便利に使えます。
 
 ## 備考
 * ロギングの使い方: [Python 公式ドキュメント - ロギングの詳細](https://docs.python.org/ja/3/howto/logging.html#advanced-logging-tutorial)
