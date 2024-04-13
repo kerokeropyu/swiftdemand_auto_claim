@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 import time
+import os
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -17,6 +18,11 @@ driver.implicitly_wait(1)
 # 本日日付取得
 dt = datetime.datetime.today() 
 d = dt.date()
+
+# ログフォルダが存在しない場合は作成する
+log_folder = 'logs'
+if not os.path.exists(log_folder):
+    os.makedirs(log_folder)
 
 # ロガーをインスタンス化
 logger = logging.getLogger(__name__)
